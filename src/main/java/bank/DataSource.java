@@ -13,7 +13,7 @@ public class DataSource {
     Connection connection = null;
     try {
       connection = DriverManager.getConnection(db_file);
-      System.out.println("Connected Successfully");
+      //System.out.println("Connected Successfully");
     } catch (SQLException e) {
       e.printStackTrace();
     }
@@ -36,7 +36,7 @@ public class DataSource {
           results.getInt("account_id"));
       }
     } catch (SQLException e) {
-      // TODO: handle exception
+      
       e.printStackTrace();
     }
     return user;
